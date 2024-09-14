@@ -4,10 +4,73 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	  <div>
+        <form action="" method="post">
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label for="gender_m">Male</label>
+                    <input type="radio" id="gender_m" name="gender" checked>
+                    <label for="gender_f">Female</label>
+                    <input type="radio" id="gender_f" name="gender" checked>
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="cars">Car Brands</label>
+                <input type="Select" id="cars" required placeholder="Please choose an option">
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required placeholder="Age">
+            </div>
+
+            <div>
+                <label for="dob">DOB</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+
+            <div>
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required placeholder="Password">
+            </div>
+
+            <div>
+                <label for="tos">I agree to the TOS</label>
+                <input type="checkbox" name="tos" id="tos" required>
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
