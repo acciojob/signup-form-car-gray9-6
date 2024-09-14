@@ -13,7 +13,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	  <div>
+	 <div>
         <form action="" method="post">
 
             <div>
@@ -39,8 +39,14 @@
 
             <div>
                 <label for="cars">Car Brands</label>
-                <input type="Select" id="cars" required placeholder="Please choose an option">
+                <select id="cars" required>
+                    <option value="" disabled selected>Please choose an option</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="ford">Ford</option>
+                </select>
             </div>
+            
 
             <div>
                 <label for="age">Age</label>
@@ -67,7 +73,7 @@
                 <input type="checkbox" name="tos" id="tos" required>
             </div>
 
-            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
 
         </form>
     </div>
